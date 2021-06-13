@@ -1,0 +1,29 @@
+@import "../../../style.scss";
+
+.BackDrop {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.LoaderHolder {
+  background: transparent;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+  .VueLoader{
+     color: $RadiumGreen;
+  }
+}
