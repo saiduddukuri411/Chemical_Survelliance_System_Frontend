@@ -1,0 +1,46 @@
+
+@import "../../../style.scss";
+
+.OTPBackdrop{
+
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.9;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background: $iupuiBg;
+}
+
+.OTPCloser{
+
+  position: absolute;
+  top: 60px;
+  right: 100px;
+  cursor: pointer;
+  font-size: 55px;
+  font-family: $roboto;
+  font-weight: 400;
+  color: $RadiumGreen;
+  z-index: 400;
+}
+
+.OTPContainer{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 300;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+

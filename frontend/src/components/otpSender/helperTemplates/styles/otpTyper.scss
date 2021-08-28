@@ -1,0 +1,69 @@
+@import "../../../../style.scss";
+
+.OTPTyperContainer {
+  box-sizing: border-box;
+  padding: 55px;
+  background: $inputBlue;
+  border-radius: 10px;
+
+  .EmailText {
+    color: $LightBlueBg;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    font-family: $roboto;
+    margin-bottom: 30px;
+  }
+
+  .OTPTyperBox {
+    background: $greyColor;
+    width: 500px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $LightBlueBg;
+    font-family: $roboto;
+    letter-spacing: 0.15rem;
+    padding-left: 10px;
+    padding-top: 3px;
+    margin-bottom: 45px;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .OTPContainerBtnHolder{
+
+      width: 500px;
+      display: flex;
+      margin-bottom: 40px;
+      justify-content: space-between;
+
+      .OTPContainerBtn{
+          padding: 15px 40px;
+          font-size: 16px;
+          background: gray;
+          color: $LightBlueBg;
+          font-family: $roboto;
+          letter-spacing: 0.1rem;
+          font-weight: 600;
+          border-radius: 25px;
+          cursor: pointer;
+          &:hover{
+              background: $BluePurple;
+              color: $white;
+          }
+      }
+      
+  }
+
+  .ResetError{
+    font-size: 19px;
+    letter-spacing: 0.15rem;
+    font-family: $roboto;
+    color: $errorColor;
+    font-weight: 600;
+}
+}

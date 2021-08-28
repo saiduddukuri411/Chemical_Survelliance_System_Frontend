@@ -8,6 +8,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1800;
 }
 
 .LoaderHolder {
@@ -22,6 +23,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
+   z-index: 2000;
    
   .VueLoader{
      color: $RadiumGreen;

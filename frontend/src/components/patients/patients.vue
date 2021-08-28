@@ -1,5 +1,5 @@
 <template>
-    <SharedUi title="Patient" :getData ="getData"/>
+    <SharedUi title="Patient" :getData ="getData" :value="getSearchQuery"/>
 </template>
 
 
@@ -13,10 +13,16 @@ export default {
       SharedUi
     },
     computed:{
-   ...mapGetters(["getLoaderState", "getSamplesList", "getPatientsList"])
+   ...mapGetters(["getLoaderState", "getSamplesList", "getPatientsList", "getLoginStatus","getSearchQuery"]),
+   searchQuery: function(){
+     return this.$store.state.SearchQuery.query
+   }
   },
   methods: {
     onComponentLoad() {
+      if( !this.getLoginStatus){
+        this.$router.push("/")
+    }
       if( this.getPatientsList === null ){ 
       this.$store.dispatch("getInitialPatientsData");
       }

@@ -12,8 +12,9 @@ export default {
     SharedUi
   },
   computed:{
-   ...mapGetters(["getLoaderState", "getSamplesList", "getPatientsList"])
+   ...mapGetters(["getLoaderState", "getSamplesList", "getPatientsList", "getLoginStatus"])
   },
+  
   methods: {
     onComponentLoad() {
 
@@ -27,7 +28,11 @@ export default {
     }
   },
   mounted() {
+    if( !this.getLoginStatus){
+        this.$router.push("/")
+    }
     this.onComponentLoad();
+    
   }
 };
 </script>

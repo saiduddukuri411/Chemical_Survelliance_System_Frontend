@@ -22,7 +22,20 @@ export default {
   },
   computed:{
      ...mapGetters(["getLoaderState"])
-  }
+  },
+  mounted() {
+       
+       let token = localStorage.getItem("PATC_KEY");
+
+       if( !token ){
+         return
+       }
+
+       this.$store.commit("UPDATE_LOGIN", true )
+       this.$store.commit("UPDATE_TOKEN", token)
+
+       this.$router.push("/samples")
+  },
 };
 </script>
 

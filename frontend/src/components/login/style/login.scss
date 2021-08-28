@@ -1,0 +1,116 @@
+@import "../../../style.scss";
+
+.LoginContainer {
+  width: 100vw;
+  height: 88vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background: $iupuiBg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .LoginForm {
+    width: 450px;
+    height: 550px;
+    box-shadow: $formShadow;
+    background: $inputBlue;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .LoginHeader {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      margin-bottom: 70px;
+
+      .ToggleLoginButtons {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 0.16rem;
+        color: $LightBlueBg;
+        font-family: $roboto;
+        cursor: pointer;
+      }
+
+      .ActiveToggleBtn {
+        background: $BluePurple;
+        color: $white;
+      }
+    }
+
+    .LoginFormInput {
+      width: 80%;
+      height: 50px;
+      background: $greyColor;
+      border-radius: 3px;
+      box-shadow: $formShadow;
+      outline: none;
+      border: none;
+      box-sizing: border-box;
+      padding: 10px;
+      color: $LightBlueBg;
+      font-weight: bold;
+      font-family: $roboto;
+      letter-spacing: 0.13rem;
+      font-size: 17px;
+      margin-bottom: 40px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .ForgotPasswordBtn{
+
+      margin-bottom: 40px;
+      width: 80%;
+      display: flex;
+      justify-content: flex-end;
+      font-family: $roboto;
+      color: $LightBlueBg;
+      font-size: 16px;
+      letter-spacing: 0.18rem;
+      font-weight: 600;
+      cursor: pointer;
+
+      &:hover{
+        color: $errorColor;
+      }
+
+    }
+
+    .LoginFormBtn {
+      box-sizing: border-box;
+      padding: 18px 50px 18px;
+      border-radius: 4px;
+      margin-top: 20px;
+      cursor: pointer;
+      font-size: 17px;
+      font-family: $roboto;
+      font-size: 16px;
+      font-weight: 400;
+      background: $BluePurple;
+      color: $white;
+      letter-spacing: 0.1rem;
+    }
+
+    .LoginErrorTag {
+      color: $errorColor;
+      margin-top: 20px;
+      font-size: 17px;
+      font-family: $roboto;
+      font-weight: 600;
+      letter-spacing: 0.2rem;
+    }
+  }
+}

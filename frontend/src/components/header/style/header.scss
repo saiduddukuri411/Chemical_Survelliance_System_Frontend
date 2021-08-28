@@ -4,7 +4,7 @@
     width: 100vw;
     height: 12vh;
     display: flex;
-    background: $BlueBg;
+    background: $iupuiBg;
     margin: 0;
     padding: 0;
     align-items: center;
@@ -20,6 +20,24 @@
         cursor: pointer;
         font-weight: 500;
     }
+    .HeaderSearchBar{
+        width: 400px;
+        height: 40px;
+        border: none;
+        background: $RadiumGreen;
+        padding-left: 15px;
+        color: $LightBlueBg;
+        font-size: 16px;
+        letter-spacing: 0.14rem;
+        font-weight: 600;
+        padding-top: 3px;
+        font-family: $roboto;
+        border-radius: 30px;
+        outline: none;
+        &:hover{
+            outline: none;
+        }
+    }
     .NavContainer{
         width: 35%;
         padding-left: 15px;
@@ -27,20 +45,21 @@
         display: flex;
         height: 100%;
         // align-items: center;
-        justify-content: space-between;
+        // justify-content: space-between;
+        // justify-content: flex-end;
         .NavElement{
             font-family: $roboto;
             font-size: 16px;
             letter-spacing: 0.13rem;
             cursor: pointer;
-            color: $white;
+            color: $LightBlueBg;
             font-weight: 600;
             height: 70%;
             padding-left: 25px;
             padding-right: 25px;
             border-bottom-left-radius: 6px;
             border-bottom-right-radius: 6px;
-            background: $LightBlueBg;
+            background: $inputBlue;
             display: flex;
             align-items: center;
             text-decoration: none;
@@ -50,6 +69,7 @@
         }
         .ActiveNavIcon{
             background: $BluePurple;
+            color: $secondaryWhite;
         }
     }
 }

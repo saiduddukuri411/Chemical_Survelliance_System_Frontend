@@ -31,7 +31,7 @@ import GlobalCard from "../globalCard/globalCard.vue";
 
 export default {
   name: "SharedUi",
-  props: ["title", "getData"],
+  props: ["title", "getData", "value"],
   components: {
     GlobalCard
   },

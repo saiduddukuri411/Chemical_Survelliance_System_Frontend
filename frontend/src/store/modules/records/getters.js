@@ -1,6 +1,9 @@
 import { BASE_URL } from "./baseURLS.js";
 
-const getterApiFetcher = async (tail, token) => {
+const getterApiFetcher = async (tail) => {
+
+  let token = localStorage.getItem("PATC_KEY");
+
   let responseData;
 
   try {
@@ -31,7 +34,7 @@ export const getInitialSamplesData = async (
 ) => {
 
   commit( loaderMethodCTX, true );
-  let responseData = await getterApiFetcher( 'samples', token );
+  let responseData = await getterApiFetcher( 'samples' );
  commit( methodCTX, responseData );
  commit( loaderMethodCTX, false );
   
@@ -44,7 +47,7 @@ export const getInitialPatientsData = async (
 ) => {
 
   commit( loaderMethodCTX, true );
-  let err, responseData = await getterApiFetcher( 'patients', token );
+  let err, responseData = await getterApiFetcher( 'patients' );
   console.log( err)
  commit( methodCTX, responseData );
  commit( loaderMethodCTX, false );

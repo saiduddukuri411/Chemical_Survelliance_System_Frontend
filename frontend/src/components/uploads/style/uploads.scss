@@ -1,0 +1,86 @@
+@import "../../../style.scss";
+
+.UploadContainer {
+  width: 100vw;
+  height: 100vh;
+  background: $iupuiBg;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .FileInput {
+    color: $white;
+    border: 1px solid white;
+
+    display: none;
+  }
+
+  .CustomPicker {
+    cursor: pointer;
+    padding: 15px 20px;
+    background: $inputBlue;
+    border-radius: 10px;
+
+    font-family: $roboto;
+    font-size: 17px;
+    letter-spacing: 0.14rem;
+    color: $LightBlueBg;
+    font-weight: 700;
+
+    &:hover {
+      background: $BluePurple;
+      color: $inputBlue;
+    }
+  }
+
+  .SelectorContainer {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+
+    .CheckBox {
+      height: 20px;
+      width: 20px;
+      border-radius: 30%;
+      background: $inputBlue;
+      cursor: pointer;
+      margin-right: 20px;
+    }
+
+    .Active {
+      background: $green;
+    }
+
+    .CheckBoxText {
+      font-size: 17px;
+      font-family: $roboto;
+      color: $inputBlue;
+      letter-spacing: 0.15rem;
+      font-weight: 600;
+      margin-right: 50px;
+    }
+  }
+
+  .UploadBtn{
+    margin-top: 55px;
+    padding: 18px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: $inputBlue;
+    background: $green;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: $roboto;
+    letter-spacing: 0.2rem;
+  }
+  .UploadError{
+    color: $errorColor;
+    margin-top: 30px;
+    font-size: 16px;
+    letter-spacing: 0.25rem;
+    font-family: $roboto;
+    font-weight: 700;
+  }
+}

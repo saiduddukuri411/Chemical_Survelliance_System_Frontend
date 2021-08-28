@@ -14,6 +14,12 @@ const mutations = {
   INITIALIZE_PATIENTS: (state, payload) => {
     state.patients = payload;
   },
+  UPDATE_SAMPLES: ( state, payload) => {
+    state.samples = payload
+  },
+  UPDATE_PATIENTS: ( state, payload) => {
+    state.patients = payload
+  },
   CHANGE_GLOBAL_LOADER_STATE: (state, payload) => {
     state.globalLoader = payload;
   },
